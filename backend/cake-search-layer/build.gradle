@@ -7,6 +7,9 @@ jar {
     version =  '0.1.0'
 }
 */
+
+group = 'be.mycake.backend'
+
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 

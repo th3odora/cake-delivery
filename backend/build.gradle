@@ -7,6 +7,14 @@ subprojects {
     }
 
     dependencies {
+	
+		def springVersion = '4.2.4.RELEASE'
+		
+		compile ('org.springframework:spring-core:' + springVersion) 
+		{
+			exclude group: 'commons-logging', module: 'commons-logging'
+		}
+		
         testCompile 'junit:junit:4.12'
     }
 
