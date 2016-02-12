@@ -1,1 +1,6 @@
 /build
+/bin/
+.project
+.classpath
+/.settings
+/.vscode
