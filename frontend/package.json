@@ -1,0 +1,11 @@
+{
+  "name": "cake-delivery-frontend",
+  "version": "1.0.0",
+  "description": "this is the UI of the cake-delivery project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tma",
+  "license": "ISC"
+}
