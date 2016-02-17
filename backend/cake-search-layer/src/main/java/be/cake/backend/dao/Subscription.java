@@ -7,22 +7,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/**
- * Represents an order
- * @author manousidou
- *
- */
-
 @Getter
 @Setter
 @NoArgsConstructor
-public class Order {
-	
+public class Subscription {
+
 	private String storeId;
-	private String status;
-	private Date placedAt;
+	private Date validFrom, validUntil;
 	private List<Product> products;
-	private List<Comment> comments;
 	
 	
 }

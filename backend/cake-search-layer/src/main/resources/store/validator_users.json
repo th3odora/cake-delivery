@@ -1,0 +1,7 @@
+db.createCollection( "user",
+   { validator: { $or:
+      [
+         { username: { $type: "string" } }         
+      ]
+   }
+} )

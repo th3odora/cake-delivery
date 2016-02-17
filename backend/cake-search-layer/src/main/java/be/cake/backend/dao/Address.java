@@ -1,7 +1,9 @@
 package be.cake.backend.dao;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import org.springframework.data.geo.Point;
 
@@ -11,12 +13,15 @@ import org.springframework.data.geo.Point;
  *
  */
 @Getter
+@Setter
 @RequiredArgsConstructor
 public class Address {
 
-
+	@NonNull
 	private final Point location;
+	@NonNull
 	private String street;
+	@NonNull
 	private String zipCode;
 	
 	

@@ -1,6 +1,7 @@
 package be.cake.backend.dao;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,9 +31,10 @@ public class User {
 	@NonNull
 	private Date userSince;
 	
-	private String address;
+	private String address, phone;
 	
-	private String phone;
+	List<Order> orders;
+	List<Subscription> subsriptions;
 	
 	public User(String userName) {
 		this.userName = userName;
